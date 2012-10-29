@@ -959,7 +959,7 @@ describe Mongoid::Document do
           end
 
           it "copies over the dirty changes" do
-            became.changes.should eq(obj.changes)
+            became.changes["ssn"].should eq(obj.changes["ssn"])
           end
         end
 

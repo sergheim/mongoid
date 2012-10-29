@@ -3,6 +3,10 @@ gemspec
 
 gem "rake"
 
+git "git://github.com/rails/rails.git" do
+  gem "activemodel"
+end
+
 platforms :mri_19 do
   unless ENV["CI"]
     gem "debugger"
